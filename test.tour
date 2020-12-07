@@ -1,0 +1,10 @@
+NAME : test
+TYPE : TOUR
+TOUR_SECTION
+1
+5
+3
+2
+4
+-1
+EOF
