@@ -13,3 +13,34 @@ n 個のノードが与えられたとき, 各ノード k (k = 1, 2, ..., n) は
 ![\mathrm{dist}_{(k, l)} = (int) (\sqrt{(x_k - x_l)^2 + (y_k - y_l)^2} + 0.5)](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cmathrm%7Bdist%7D_%7B%28k%2C+l%29%7D+%3D+%28int%29+%28%5Csqrt%7B%28x_k+-+x_l%29%5E2+%2B+%28y_k+-+y_l%29%5E2%7D+%2B+0.5%29)  
 で表される. ただし ![(int) z ](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%28int%29+z+) は ![z \geq 0](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+z+%5Cgeq+0) のとき ![m \leq z](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+m+%5Cleq+z) を満たす最大の整数 m を返す. 距離は対象であることに注意.  
 問題は最小距離のツアーを見つけることである. これは二次元対称 TSP と呼ばれている.
+
+## 停止条件
+アルゴリズムの停止条件は以下のようにする.  
+アルゴリズムによって消費された CPU 時間がパラメータ timelim で与えられた制限時間を超えたときに停止する. デフォルトでは 300 に設定している.
+
+## TSPデータについて
+TSP のデータには [TSPLIB](http://elib.zib.de/pub/mp-testdata/tsp/tsplib/tsplib.html) にある .tsp ファイルを読み込む.
+
+## コンパイル
+tsp.c をコンパイルするには以下を
+
+```
+gcc -Wall -O2 -o tsp tsp.c -lm
+```
+
+または
+
+```
+make
+```
+
+をコマンドラインから入力する.
+
+## 実行
+tsp.c を a280.tsp に対して実行するにはコンパイル後に
+
+```
+cat a.280.tsp | ./tsp
+```
+
+とコマンドラインから入力すればよい.
