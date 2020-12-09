@@ -332,7 +332,7 @@ int is_feasible( TSPdata *tspdata, int *tour ){
   return flag;
 }
 
-/* my_algorithm ********************************************************/
+/* my function and algorithm ********************************************************/
 void print_array(int *a, int n){
     int i, s[n];
 
