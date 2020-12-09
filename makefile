@@ -4,7 +4,7 @@
 # (As the name of the sample program is "template.c", the following
 # line is "template".)
 
-TARGET = template
+TARGET = tsp
 
 # The default compiler is "gcc" with options "-Wall O2".
 # You can change the compiler and options by modifying the following
