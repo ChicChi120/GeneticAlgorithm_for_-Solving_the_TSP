@@ -8,7 +8,7 @@
        http://www.iwr.uni-heidelberg.de/groups/comopt/software/TSPLIB95/
 
   NOTE: Indices of nodes range from 0 to n-1 in this program,
-        while it does from 1 to n in "README.eng" and the data files of
+        while it does from 1 to n in "README.md" and the data files of
         instances and of tours. 
 
   If you would like to use various parameters, it might be useful to modify

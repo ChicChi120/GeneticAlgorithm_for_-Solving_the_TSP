@@ -1,8 +1,8 @@
 # Template of makefile
 
 # Write below after "TARGET =" the name of your program without ".c".
-# (As the name of the sample program is "template.c", the following
-# line is "template".)
+# (As the name of the sample program is "tsp.c", the following
+# line is "tsp".)
 
 TARGET = tsp
 
