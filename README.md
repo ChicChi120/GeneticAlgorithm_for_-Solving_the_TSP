@@ -76,5 +76,7 @@ cat result.tour | ./tsp_view.py
 
 ## 工夫した点
 ### 順序配列
-GA では順序配列を用いて遺伝子の操作を行った.
+GA では  order _ representation 関数で順序配列を用いて遺伝子の操作を行った.
 
+### 二点交叉
+tow _ point _ crossover 関数で二点交叉を実装した.
