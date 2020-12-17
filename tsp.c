@@ -575,7 +575,7 @@ void genetic_algorithm( Param *param, TSPdata *tspdata, Vdata *vdata )
 
   for (i = 0; i < len; i++)
   {
-    gene[0][i] = i;
+    gene[0][i] = 1;
   }
 
   for(i=0; i<tspdata->n; i++){
